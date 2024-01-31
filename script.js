@@ -1,4 +1,4 @@
-let path = "/songs/"
+let path = "./songs/"
 let extention = " | MUSIC"
 
 let playlistView = false
