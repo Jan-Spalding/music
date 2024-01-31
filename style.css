@@ -1,0 +1,166 @@
+body {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:#0e1525;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.center {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.column {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction:column;
+}
+
+.song {
+  color:white;
+  position:relative;
+  width:100%;
+  height:12vh;
+  background-color:#1c2333;
+  margin-top:1vh;
+}
+
+.song p {
+  margin:0;
+  padding:0;
+  font-size: 2.5vw;
+}
+
+#playlist {
+  position:absolute;
+  top:0;
+  right:0;
+  height:calc(85vh - 2px);
+  width:35%;
+  background-color:#0e1525;
+  justify-content: flex-start;
+  overflow-y:scroll;
+  border-left:2px solid white;
+}
+
+#toPlaylist {
+  display:none;
+}
+
+#toVolume {
+  display:block;
+}
+
+.playlist-item {
+  position:relative;
+  width:28vw;
+  background-color:#1c2333;
+  box-shadow:10px 10px black;
+  border-radius:16px;
+  color:white;
+  margin:5vh;
+}
+
+.playlist-item p {
+  text-align: center;
+}
+
+.playlist-button {
+  background-color:#5239cc;
+  width:90%;
+  height:10vh;
+  border-radius:16px;
+  font-size:3vw;
+  margin-bottom:2vh;
+}
+
+.playlist-item p {
+  font-size: 4vw;
+}
+
+#playlistsHolder {
+  position:relative;
+  width:65%;
+  height:75vh;
+}
+
+#songName {
+  color:white;
+  font-size:3vw;
+  margin:0;
+}
+
+.nav {
+  font-size:3vw;
+  position:relative;
+  color:white;
+  height:10vh;
+  width:50vw !important;
+}
+
+#navHolder {
+  width:65%;
+  height:10vh;
+  justify-content: flex-start;
+  border-bottom:2px solid white;
+}
+
+.playlist-song {
+  position:relative;
+  width:100%;
+  height:20vh;
+  background-color:#1c2333;
+  color:white;
+  margin-top:1vh;
+}
+
+.playlist-song p {
+  font-size: 2.5vw;
+}
+
+
+
+@media (max-width: 1200px) {
+  #playlist {
+    top:unset;
+    bottom:0;
+    height:0vh;
+    width: 100%;
+    border:unset;
+  }
+
+  #toPlaylist {
+    display:block;
+  }
+
+  #navHolder {
+    width:100%;
+  }
+
+  #playlistsHolder {
+    width:100%;
+  }
+
+  #toVolume {
+    display:none;
+  }
+
+  .playlist-item {
+    width:40vw
+  }
+
+  .song p {
+    font-size: 4vw;
+  }
+
+  .playlist-song p {
+    font-size: 4vw;
+  }
+
+  .nav {
+    font-size: 5vw;
+  }
+}
