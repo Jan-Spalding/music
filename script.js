@@ -42,6 +42,8 @@ function listElement(i) {
     playlistIndex = i
     audio.src = path + songs[i]
     audio.play()
+    document.getElementById("pause").style.display = "block"
+    document.getElementById("play").style.display = "none"
     document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
     document.title = currentPlaylist[playlistIndex] + extention
     setPlaylist()
@@ -57,6 +59,8 @@ function listElement(i) {
 
 document.getElementById("play").addEventListener("click", function() {
   audio.play()
+  document.getElementById("pause").style.display = "block"
+  document.getElementById("play").style.display = "none"
   document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
   document.title = currentPlaylist[playlistIndex] + extention
 })
@@ -67,6 +71,8 @@ document.getElementById("volume").addEventListener("input", function() {
 
 document.getElementById("pause").addEventListener("click", function() {
   audio.pause()
+  document.getElementById("pause").style.display = "none"
+  document.getElementById("play").style.display = "block"
 })
 
 document.getElementById("clearSearch").addEventListener("click", function() {
@@ -85,9 +91,11 @@ document.getElementById("loop").addEventListener("click", function() {
   if (!loop) {
     audio.loop = true
     loop = true
+    document.getElementById("loop").style.color = "#2f2272"
   } else {
     audio.loop = false
     loop = false
+    document.getElementById("loop").style.color = "#ffffff"
   }
   console.log(loop)
 })
@@ -116,6 +124,8 @@ function nextInPlaylist() {
   }
   audio.src = path + currentPlaylist[playlistIndex]
   audio.play()
+  document.getElementById("pause").style.display = "block"
+  document.getElementById("play").style.display = "none"
   document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
   document.title = currentPlaylist[playlistIndex] + extention
   bar.style.width = 0 + "%"
@@ -129,6 +139,8 @@ function prevInPlaylist() {
   }
   audio.src = path + currentPlaylist[playlistIndex]
   audio.play()
+  document.getElementById("pause").style.display = "block"
+  document.getElementById("play").style.display = "none"
   document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
   document.title = currentPlaylist[playlistIndex] + extention
   bar.style.width = 0 + "%"
@@ -179,6 +191,8 @@ document.getElementById("playlist1").addEventListener("click", function() {
   playlistIndex = 0
   audio.src = path + currentPlaylist[0]
   audio.play()
+  document.getElementById("pause").style.display = "block"
+  document.getElementById("play").style.display = "none"
   document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
   document.title = currentPlaylist[playlistIndex] + extention
   setPlaylist()
@@ -190,6 +204,8 @@ document.getElementById("playlist2").addEventListener("click", function() {
   playlistIndex = 0
   audio.src = path + currentPlaylist[0]
   audio.play()
+  document.getElementById("pause").style.display = "block"
+  document.getElementById("play").style.display = "none"
   document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
   document.title = currentPlaylist[playlistIndex] + extention
   setPlaylist()
@@ -212,19 +228,37 @@ document.getElementById("inesrunning").addEventListener("click", function() {
   playlistIndex = 0
   audio.src = path + currentPlaylist[0]
   audio.play()
+  document.getElementById("pause").style.display = "block"
+  document.getElementById("play").style.display = "none"
   document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
   document.title = currentPlaylist[playlistIndex] + extention
   setPlaylist()
   highlight(playlistIndex)
 })
 
+document.getElementById("rockplaylist").addEventListener("click", function(){
+  currentPlaylist = rock
+  playlistIndex = 0
+  audio.src = path + currentPlaylist[0]
+  audio.play()
+  document.getElementById("pause").style.display = "block"
+  document.getElementById("play").style.display = "none"
+  document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
+  document.title = currentPlaylist[playlistIndex] + extention
+  setPlaylist()
+  highlight(playlistIndex)
+})
 
 window.addEventListener("keydown", function(event) {
   if (event.code == "Space" && document.activeElement != document.getElementById("searchInput")) {
     if (audio.paused) {
       audio.play()
+      document.getElementById("pause").style.display = "block"
+      document.getElementById("play").style.display = "none"
     } else {
       audio.pause()
+      document.getElementById("pause").style.display = "none"
+      document.getElementById("play").style.display = "block"
     }
   }
   if (event.code == "ArrowUp") {
@@ -264,6 +298,8 @@ function setPlaylist() {
       playlistIndex = i
       audio.src = path + currentPlaylist[i]
       audio.play()
+      document.getElementById("pause").style.display = "block"
+      document.getElementById("play").style.display = "none"
       document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
       document.title = currentPlaylist[playlistIndex] + extention
       highlight(playlistIndex)
@@ -344,6 +380,8 @@ document.getElementById("shufflePlaylist").addEventListener("click", function() 
   playlistIndex = 0
   audio.src = path + currentPlaylist[0]
   audio.play()
+  document.getElementById("pause").style.display = "block"
+  document.getElementById("play").style.display = "none"
   document.getElementById("songName").innerHTML = currentPlaylist[playlistIndex]
   document.title = currentPlaylist[playlistIndex] + extention
   highlight(playlistIndex)
