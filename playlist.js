@@ -4,7 +4,7 @@ let playlist = [
   "Water Hands - Sudden.mp3"
 ]
 
-let  rock = [
+let rock = [
   'Back In Black (Official Video).mp3',
   'Be Quiet and Drive (Far Away).mp3',
   'Black Dog (Remaster).mp3',
