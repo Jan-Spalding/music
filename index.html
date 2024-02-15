@@ -1,12 +1,12 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>No Song Selected | MUSIC</title>
-  <link href="./style.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" href="./js.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href=".js.png">
   <script src="https://kit.fontawesome.com/7304274d2a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -56,8 +56,10 @@
     <div class="center" style="position:relative;width:100%;margin-top:10px;">
       <div class="center" style="position:absolute;height:50px;width:80%;justify-content: space-evenly;">
         <i class="fa-solid fa-backward-step fa-2xl" id="prev" style="color: white;"></i>
-        <i class="fa-solid fa-play fa-2xl" style="color: white;" id="play"></i>
-        <i class="fa-solid fa-pause fa-2xl" id="pause" style="color: white;"></i>
+        <div class="center">
+          <i class="fa-solid fa-play fa-2xl" style="color: white;" id="play"></i>
+          <i class="fa-solid fa-pause fa-2xl" id="pause" style="color: white;display:none;"></i>
+        </div>
         <i class="fa-solid fa-forward-step fa-2xl" id="skip" style="color: white;"></i>
         <i class="fa-solid fa-volume-high fa-2xl" style="color: white;" id="toVolume"></i>
         <input type="range" id="volume" min="0" max="1" step="0.01" value="1" style="display: none;position:absolute;top:0;">
@@ -77,8 +79,8 @@
 
   <div class="column" id="playlist"></div>
   
-  <script src="./playlist.js"></script>
-  <script src="./script.js"></script>
+  <script src="playlist.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
