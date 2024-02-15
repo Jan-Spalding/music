@@ -4,6 +4,30 @@ let playlist = [
   "Water Hands - Sudden.mp3"
 ]
 
+let  rock = [
+  'Back In Black (Official Video).mp3',
+  'Be Quiet and Drive (Far Away).mp3',
+  'Black Dog (Remaster).mp3',
+  'Black Hole Sun.mp3',
+  'Californication.mp3',
+  'Come As You Are.mp3',
+  'Enter Sandman.mp3',
+  'Even Flow (Official Video).mp3',
+  'Everlong (Official HD Video).mp3',
+  'Going To California - Remaster (Visualizer).mp3',
+  'Hotel California (Live at Capital Centre Washington DC 3211977).mp3',
+  'Kashmir (Remaster).mp3',
+  'Loser.mp3',
+  'One.mp3',
+  'Paranoid.mp3',
+  'Simple Man (Audio).mp3',
+  'Something In The Way (Audio).mp3',
+  'Sultans Of Swing Video.mp3',
+  'Sweet Child O Mine Version 2 Black And White.mp3',
+  'War Pigs.mp3',
+  'Welcome To The Jungle.mp3'
+]
+
 let mfdoom = [
   "All Caps.mp3",
   "America's Most Blunted.mp3",
@@ -232,7 +256,28 @@ let songs = [
   'Idfc (Tarro Remix).mp3', 
   'Starboy.mp3',
   'Bound.mp3', 
-  'HOME - Resonance.mp3'
+  'HOME - Resonance.mp3',
+  'Back In Black (Official Video).mp3',
+  'Be Quiet and Drive (Far Away).mp3',
+  'Black Dog (Remaster).mp3',
+  'Black Hole Sun.mp3',
+  'Californication.mp3',
+  'Come As You Are.mp3',
+  'Enter Sandman.mp3',
+  'Even Flow (Official Video).mp3',
+  'Everlong (Official HD Video).mp3',
+  'Going To California - Remaster (Visualizer).mp3',
+  'Hotel California (Live at Capital Centre Washington DC 3211977).mp3',
+  'Kashmir (Remaster).mp3',
+  'Loser.mp3',
+  'One.mp3',
+  'Paranoid.mp3',
+  'Simple Man (Audio).mp3',
+  'Something In The Way (Audio).mp3',
+  'Sultans Of Swing Video.mp3',
+  'Sweet Child O Mine Version 2 Black And White.mp3',
+  'War Pigs.mp3',
+  'Welcome To The Jungle.mp3'
 ]
 
 songs = songs.sort()
