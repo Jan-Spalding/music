@@ -134,7 +134,8 @@ let inesplaylist = [
   'Idfc (Tarro Remix).mp3', 
   'Starboy.mp3',
   'Bound.mp3', 
-  'HOME - Resonance.mp3'
+  'HOME - Resonance.mp3',
+  'folsom prison.mp3'
 ]
 
 let inesrun = [
@@ -277,7 +278,8 @@ let songs = [
   'Sultans Of Swing Video.mp3',
   'Sweet Child O Mine Version 2 Black And White.mp3',
   'War Pigs.mp3',
-  'Welcome To The Jungle.mp3'
+  'Welcome To The Jungle.mp3',
+  'folsom prison.mp3'
 ]
 
 songs = songs.sort()
