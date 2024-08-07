@@ -18,42 +18,49 @@
 
   <div id="playlistsHolder">
     <div class="center" id="playlists" style="overflow-y:scroll;display:none;">
-      <div class="column" style="position:relative;width:50%;height:75vh;justify-content: flex-start;">
-        <div class="playlist-item column">
-          <p>Jans EPIC Playlist</p>
-          <div class="center playlist-button" id="playlist1">Play</div>
+      <div class="center" id="profiles" style="width:100%;justify-content: space-evenly;">
+        <div class="profile column">
+          <p style="color:white;font-size:3vh;">Jan Spalding</p>
+          <div class="center playlist-button" style="color:white;" id="janSpalding">Select</div>
         </div>
-        <div class="playlist-item column">
-          <p>I Playlist</p>
-          <div class="center playlist-button" id="inesplaylist">Play</div>
-        </div>
-        <div class="playlist-item column">
-          <p>Jans Rock Playlist</p>
-          <div class="center playlist-button" id="rockplaylist">Play</div>
+        <div class="profile column">
+          <p style="color:white;font-size:3vh;">Luna</p>
+          <div class="center playlist-button" style="color:white;" id="luna">Select</div>
         </div>
       </div>
-      <div class="column" style="position:relative;width:50%;height:75vh;justify-content:flex-start">
-        <div class="playlist-item column">
-          <p>MF DOOM Playlist</p>
-          <div class="center playlist-button" id="playlist2">Play</div>
+      <div id="janSpalingProfile" style="display:none;">
+        <div class="column" style="position:relative;width:50%;height:75vh;justify-content: flex-start;">
+          <div class="playlist-item column">
+            <p>Jan's EPIC Playlist</p>
+            <div class="center playlist-button" id="playlist1">Play</div>
+          </div>
+          <div class="playlist-item column">
+            <p>Jan Rock Playlist</p>
+            <div class="center playlist-button" id="rockplaylist">Play</div>
+          </div>
         </div>
-        <div class="playlist-item column">
-          <p>I RUNNNN</p>
-          <div class="center playlist-button" id="inesrunning">Play</div>
+        <div class="column" style="position:relative;width:50%;height:75vh;justify-content:flex-start;">
+          <div class="playlist-item column">
+            <p>MF DOOM Playlist</p>
+            <div class="center playlist-button" id="playlist2">Play</div>
+          </div>
+        </div>
+      </div>
+      <div id="lunaProfile" style="display: none;">
+        <div class="column" style="position:relative;width:50%;height:75vh;justify-content: flex-start;">
+          <div class="playlist-item column">
+            <p>I Playlist</p>
+            <div class="center playlist-button" id="inesplaylist">Play</div>
+          </div>
+        </div>
+        <div class="column" style="position:relative;width:50%;height:75vh;justify-content:flex-start;">
+          <div class="playlist-item column">
+            <p>I RUNNNN</p>
+            <div class="center playlist-button" id="inesrunning">Play</div>
+          </div>
         </div>
       </div>
     </div>
-    
-    <div id="list" style="position:relative;width:100%;height:80vh;overflow-y:scroll !important;">
-      <div class="center" style="width:100%;height:10vh;background-color:#5239cc;">
-        <div>
-          <input type="text" id="searchInput">
-          <button id="searchButton">search</button>
-          <button id="clearSearch">clear</button>
-        </div>
-      </div>
-    </div>
-  </div>
   
   <div class="column" id="controls" style="position:absolute;width:100%;height:15vh;background-color:#0e1525;bottom:0;border-top:2px solid white;z-index:1;">
     <p id="songName">No Song Selected</p>
