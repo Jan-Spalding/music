@@ -57,6 +57,16 @@ function listElement(i) {
   list.appendChild(div)
 }
 
+document.getElementById("janSpalding").addEventListener("click", function() {
+  document.getElementById("janSpalingProfile").style.display = "flex";
+  document.getElementById("profiles").style.display = "none";
+})
+
+document.getElementById("luna").addEventListener("click", function() {
+  document.getElementById("lunaProfile").style.display = "flex";
+  document.getElementById("profiles").style.display = "none";
+})
+
 document.getElementById("play").addEventListener("click", function() {
   audio.play()
   document.getElementById("pause").style.display = "block"
