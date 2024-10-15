@@ -35,7 +35,7 @@ function listElement(i) {
   let p = document.createElement("p")
   p.innerHTML = songs[i]
 
-  let button = document.createElement("button")
+  let button = document.createElement("div")
   button.innerHTML = "Play"
   button.addEventListener("click", function() {
     currentPlaylist = songs
@@ -49,6 +49,8 @@ function listElement(i) {
     setPlaylist()
     highlight(playlistIndex)
   })
+  button.style.cssText = "width:100px;height:60px";
+  button.className = "playlist-button center"
 
   div2.appendChild(p)
   div3.appendChild(button)
@@ -62,10 +64,10 @@ document.getElementById("janSpalding").addEventListener("click", function() {
   document.getElementById("profiles").style.display = "none";
 })
 
-document.getElementById("luna").addEventListener("click", function() {
-  document.getElementById("lunaProfile").style.display = "flex";
-  document.getElementById("profiles").style.display = "none";
-})
+// document.getElementById("luna").addEventListener("click", function() {
+//   document.getElementById("lunaProfile").style.display = "flex";
+//   document.getElementById("profiles").style.display = "none";
+// })
 
 document.getElementById("play").addEventListener("click", function() {
   audio.play()
@@ -88,6 +90,7 @@ document.getElementById("pause").addEventListener("click", function() {
 document.getElementById("clearSearch").addEventListener("click", function() {
   clearSearch()
   searchElements = []
+  document.getElementById("searchInput").value = ""
   for (let i = 0; i < songs.length; i++) {
     listElement(i)
   }
@@ -180,6 +183,8 @@ document.getElementById("songsButton").addEventListener("click", function() {
 
 document.getElementById("toPlaylist").addEventListener("click", function() {
   if (!playlistView) {
+    document.getElementById("navHolder").style.display = "none"
+    document.getElementById("playlistsHolder").style.display = "none"
     document.getElementById("controls").style.top = "0px"
     document.getElementById("controls").style.bottom = ""
     document.getElementById("playlist").style.height = "calc(85vh - 2px)"
@@ -187,6 +192,8 @@ document.getElementById("toPlaylist").addEventListener("click", function() {
     document.getElementById("controls").style.borderBottom = "2px solid white"
     playlistView = true
   } else {
+    document.getElementById("navHolder").style.display = "flex"
+    document.getElementById("playlistsHolder").style.display = "flex"
     document.getElementById("controls").style.bottom = "0px"
     document.getElementById("controls").style.top = ""
     document.getElementById("playlist").style.height = 0 + "vh"

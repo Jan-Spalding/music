@@ -17,17 +17,25 @@
   </div>
 
   <div id="playlistsHolder">
-    <div class="center" id="playlists" style="overflow-y:scroll;display:none;">
+
+    <!-- PLAYLIST TAB -->
+    <!-- ------------------------------------------------ -->
+
+    <div class="center" id="playlists" style="overflow-y:scroll;overflow-x:hidden;display:none;width:100%;">
+      
+      <!-- DIFFERENT PROFILES -->
       <div class="center" id="profiles" style="width:100%;justify-content: space-evenly;">
         <div class="profile column">
           <p style="color:white;font-size:3vh;">Jan Spalding</p>
           <div class="center playlist-button" style="color:white;" id="janSpalding">Select</div>
         </div>
-        <div class="profile column">
+        <!-- <div class="profile column">
           <p style="color:white;font-size:3vh;">Luna</p>
           <div class="center playlist-button" style="color:white;" id="luna">Select</div>
-        </div>
+        </div> -->
       </div>
+
+      <!-- PLAYLISTS -->
       <div id="janSpalingProfile" style="display:none;">
         <div class="column" style="position:relative;width:50%;height:75vh;justify-content: flex-start;">
           <div class="playlist-item column">
@@ -61,8 +69,29 @@
         </div>
       </div>
     </div>
-  
-  <div class="column" id="controls" style="position:absolute;width:100%;height:15vh;background-color:#0e1525;bottom:0;border-top:2px solid white;z-index:1;">
+
+    <!-- ------------------------------------------------ -->
+
+
+    <!-- SONG TAB -->
+    <!-- ------------------------------------------------ -->
+
+    <!-- SHOWS ALL THE SONGS THAT ARE AVAILABEL -->
+    <div id="songs" style="width:100%;">
+      <div id="list">
+        <div id="searchHolder" class="center">
+          <input type="text" id="searchInput"></input>
+          <button id="clearSearch">Clear</button>
+          <button id="searchButton">Seach</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------ -->
+  </div>
+
+  <!-- SONG CONTROLS -->
+  <div class="column" id="controls" style="width:100%;height:15vh;background-color:#0e1525;border-top:2px solid white;z-index:1;">
     <p id="songName">No Song Selected</p>
     <div class="center" style="position:relative;width:100%;margin-top:10px;">
       <div class="center" style="position:absolute;height:50px;width:80%;justify-content: space-evenly;">
@@ -75,7 +104,7 @@
         <i class="fa-solid fa-volume-high fa-2xl" style="color: white;" id="toVolume"></i>
         <input type="range" id="volume" min="0" max="1" step="0.01" value="1" style="display: none;position:absolute;top:0;">
         <i class="fa-solid fa-arrows-rotate fa-2xl" 
- id="loop" style="color: white;"></i>
+  id="loop" style="color: white;"></i>
         <i class="fa-solid fa-list fa-2xl" style="color: white;" id="toPlaylist"></i>
         <i class="fa-solid fa-shuffle fa-2xl" style="color: white;" id="shufflePlaylist"></i>
       </div>
@@ -88,7 +117,11 @@
     </div>
   </div>
 
-  <div class="column" id="playlist"></div>
+  <!-- DISPLAYS SONGS IN PLAYLIST -->
+  <div id="playlist" class="column">
+
+  </div>
+    
   
   <script src="./playlist.js"></script>
   <script src="./script.js"></script>
