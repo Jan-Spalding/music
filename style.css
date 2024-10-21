@@ -171,6 +171,23 @@ body {
 
   #playlistsHolder {
     width:100%;
+    height:65vh;
+  }
+
+  #playlists {
+    height:65vh;
+  }
+
+  #songs {
+    height:65vh;
+  }
+
+  #controls {
+    justify-content: start;
+  }
+
+  #list {
+    height:65vh;
   }
 
   #toVolume {
