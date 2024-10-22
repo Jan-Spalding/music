@@ -185,17 +185,17 @@ document.getElementById("toPlaylist").addEventListener("click", function() {
   if (!playlistView) {
     document.getElementById("navHolder").style.display = "none"
     document.getElementById("playlistsHolder").style.display = "none"
-    document.getElementById("controls").style.top = "0px"
-    document.getElementById("controls").style.bottom = ""
-    document.getElementById("playlist").style.height = "calc(85vh - 2px)"
+    document.getElementById("controls").style.height = "20vh"
+    document.getElementById("controls").style.justifyContent = "space-evenly";
+    document.getElementById("playlist").style.height = "calc(80vh - 2px)"
     document.getElementById("controls").style.borderTop = ""
     document.getElementById("controls").style.borderBottom = "2px solid white"
     playlistView = true
   } else {
     document.getElementById("navHolder").style.display = "flex"
     document.getElementById("playlistsHolder").style.display = "flex"
-    document.getElementById("controls").style.bottom = "0px"
-    document.getElementById("controls").style.top = ""
+    document.getElementById("controls").style.height = "15vh"
+    document.getElementById("controls").style.justifyContent = "start";
     document.getElementById("playlist").style.height = 0 + "vh"
     document.getElementById("controls").style.borderTop = "2px solid white"
     document.getElementById("controls").style.borderBottom = ""
