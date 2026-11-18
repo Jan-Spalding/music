@@ -17,3 +17,7 @@ Best feature is that the website can be closed and the song will still continue 
 ### Usage 
 
 Visit the website https://jan-spalding.github.io/music/ to view
+
+### Acknowledgements 
+
+I don't own any of the songs.
